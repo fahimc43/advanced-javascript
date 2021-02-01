@@ -8,17 +8,27 @@
 // const result = add(13, 43);
 // console.log(result);
 
+
 // function add(num1, num2){
 //     console.log(num1, num2);
 // }
 // const result = add(13);
 // console.log(result);
 
+
 // const lover = {name:"smart dude", phone:"17345"};
 // console.log(lover.gf);
+
 
 // let fun = undefined;
 // console.log(fun);
 
-let ages = [12, 23, 32]
-console.log(ages[11]);
+
+// let ages = [12, 23, 32]
+// console.log(ages[11]);
+
+// null meaning of not existence
+function doSomething(x, y){
+    console.log(y);
+}
+doSomething(32);
