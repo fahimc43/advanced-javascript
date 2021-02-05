@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is not confused anymore</h1>
+    <p onclick="this.innerText = 'you clicked' ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, dolore similique. Numquam amet architecto dolor consectetur corporis qui consequuntur libero consequatur veritatis deserunt. Temporibus laborum voluptatibus repudiandae officiis illo. Praesentium?</p>
+
+    <script>
+        const myObject = {
+            name: "Kuddus Ali",
+            getFullName: function(){
+                console.log(this);
+                return 'Mr. ' + this.name;
+            }
+        }
+        // myObject.getFullName();
+
+        const anotherObj = {
+            name: "Suddus Ali"
+        }
+        // anotherObj.getFullName = myObject.getFullName;
+        // console.log(anotherObj.getFullName);
+        // anotherObj.getFullName();
+
+        function add (a, b){
+            console.log(this);
+            return a + b;
+        }
+        add(12, 13);
+
+        anotherObj.sum = add;
+        anotherObj.sum();
+
+    </script>
+</body>
+</html>
